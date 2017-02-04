@@ -1,18 +1,14 @@
 class FSM {
     /**
-     * Creates new FSM instance.
+     * Creates new FSM instance. 
      * @param config
      */
     constructor(config) {
-    	//this.config.states=config.states;
+  
     	this.config=config;
-    	this.activeState;
-    	this.state=config.initial;//start
-    	this.event="";
-    	this.prevState;
+    	this.state=config.initial;
     	this.history=[];
     	this.future=[];
-    	this.nextState;
     }
 
 
